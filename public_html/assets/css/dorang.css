@@ -11433,6 +11433,7 @@ a:hover {
 
 .overlay-img img {
   width: 100%;
+  height: 100%;
   border-radius: 0.25rem;
 }
 
@@ -12258,6 +12259,11 @@ body.dark-theme {
   background: #212529;
 }
 
+.content-wrap {
+  padding: 70px 0 40px;
+  /* background-color: #000; */
+}
+
 .grid-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -12303,6 +12309,8 @@ body.dark-theme {
   .grid-gallery {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 250px;
+    display: flex;
+    flex-direction: column;
   }
 
   .grid-gallery .grid-item:nth-child(3n - 2) {
